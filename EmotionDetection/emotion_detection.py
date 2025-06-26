@@ -21,6 +21,7 @@ def emotion_detector(text_to_analyze):
     dominant_emotion = "anger"
     for key, value in result.items():
         if value > max:
+            max = value
             dominant_emotion = key
     result["dominant_emotion"] = dominant_emotion
 
